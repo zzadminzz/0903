@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <style type="text/css">
+        form{
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: azure;
+            border-radius: 10px;
+        }
+        .top{
+             text-align: center;
+             font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+<div class="top"><h1>学生信息管理系统</h1></div>
+<hr style="border-color:slategray">
+<br><br>
+<form action="UserServlet" method="post">
+    <h2>用户注册</h2>
+    <br>
+    <input type="hidden" name="flag" value="regist">
+    账号：<input type="text" name="username"><br><br>
+    密码：<input type="password" name="pwd"><br><br>
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>
